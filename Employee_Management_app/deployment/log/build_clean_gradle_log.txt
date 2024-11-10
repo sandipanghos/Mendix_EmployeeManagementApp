@@ -1,0 +1,9 @@
+'\\Mac\Home\Desktop\mendixjob\Mendix_EmployeeManagementApp\Employee_Management_app\deployment'
+CMD.EXE was started with the above path as the current directory.
+UNC paths are not supported.  Defaulting to Windows directory.
+> Task :clean UP-TO-DATE
+
+BUILD SUCCESSFUL in 4s
+1 actionable task: 1 up-to-date
+
+

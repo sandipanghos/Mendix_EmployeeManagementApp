@@ -1,14 +1,16 @@
 # Employee Management App
 
+The submission is the mendix project compressed in zip
 
-The submission is the mendix project compressed in zip 
 ## Dedendency:
+
 Database : MySQL
-The application will only work with mysql db.
+
+Note : The application will only work with mysql db.
 The SQL queries as specific to mysql syntax .
 
-The employee and department data is fetch from DB by 
-directly query using SQL using Database connector module's ExecuteQuery JavaAction.
+The employee and department data is fetch from DB by
+directly query using SQL .
 
 ### Features Developed
 
@@ -19,7 +21,6 @@ Implement a data model to manage employee information including:
 Employee ID, Name, Department, Designation, Date of Joining, Contact Info.
 Create CRUD (Create, Read, Update, Delete) functionality for employees.
 Use the list widget to list employees and custom enable sorting and searching includes on Employee and department table.
-
 
 2.Department Hierarchy:
 Create a hierarchical structure where each department can have sub-departments.
@@ -39,5 +40,3 @@ Ensure appropriate security settings are configured for entity access and page v
 5.Advanced Workflow (Bonus):
 Create a microflow that triggers every time a new employee is added, or an existing employee is updated, sending a confirmation email to the employee.
 Use Mendix’s Email Module for this functionality.
-
-
