@@ -12,7 +12,7 @@
       "disabledBestPractices": [],
       "readRecommendations": [],
       "suppressedRecommendations": [],
-      "hasShownRecommendationsNotificationForThisApp": true,
+      "hasShownRecommendationsNotificationForThisApp": false,
       "type": "Mendix.Modeler.MxAssist.PerformanceBot.Serialization.Configuration.PerformanceBotConfiguration, Mendix.Modeler.MxAssist.PerformanceBot.Serialization, Version=9.24.2.0, Culture=neutral, PublicKeyToken=null"
     }
   ]
