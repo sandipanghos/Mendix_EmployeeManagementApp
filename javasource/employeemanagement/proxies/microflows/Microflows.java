@@ -33,6 +33,12 @@ public class Microflows
 		params.put("Helper", _helper == null ? null : _helper.getMendixObject());
 		Core.microflowCall("EmployeeManagement.ACT_Department_Create").withParams(params).execute(context);
 	}
+	public static void aCT_Department_Edit(IContext context, employeemanagement.proxies.Department _department)
+	{
+		Map<java.lang.String, Object> params = new HashMap<>();
+		params.put("Department", _department == null ? null : _department.getMendixObject());
+		Core.microflowCall("EmployeeManagement.ACT_Department_Edit").withParams(params).execute(context);
+	}
 	public static void aCT_Department_Save(IContext context, employeemanagement.proxies.Department _department)
 	{
 		Map<java.lang.String, Object> params = new HashMap<>();
@@ -44,6 +50,12 @@ public class Microflows
 		Map<java.lang.String, Object> params = new HashMap<>();
 		params.put("EmployeeHelper", _employeeHelper == null ? null : _employeeHelper.getMendixObject());
 		Core.microflowCall("EmployeeManagement.ACT_Employee_Create").withParams(params).execute(context);
+	}
+	public static void aCT_Employee_Edit(IContext context, employeemanagement.proxies.Employee _employee)
+	{
+		Map<java.lang.String, Object> params = new HashMap<>();
+		params.put("Employee", _employee == null ? null : _employee.getMendixObject());
+		Core.microflowCall("EmployeeManagement.ACT_Employee_Edit").withParams(params).execute(context);
 	}
 	public static void aCT_Employee_Save(IContext context, employeemanagement.proxies.Employee _employee)
 	{
