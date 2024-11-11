@@ -21,6 +21,12 @@ public class Microflows
 	public Microflows() {}
 
 	// These are the microflows for the EmployeeManagement module
+	public static void aCO_Employee_Account_Create_SendEmail(IContext context, employeemanagement.proxies.Employee _employee)
+	{
+		Map<java.lang.String, Object> params = new HashMap<>();
+		params.put("Employee", _employee == null ? null : _employee.getMendixObject());
+		Core.microflowCall("EmployeeManagement.ACO_Employee_Account_Create_SendEmail").withParams(params).execute(context);
+	}
 	public static void aCT_Department_Create(IContext context, employeemanagement.proxies.Helper _helper)
 	{
 		Map<java.lang.String, Object> params = new HashMap<>();
@@ -234,25 +240,6 @@ public class Microflows
 		params.put("ContactInfo", _contactInfo);
 		return (java.lang.String) Core.microflowCall("EmployeeManagement.SUB_EmloyeeQuery_Create").withParams(params).execute(context);
 	}
-	public static void sUB_Employee_Account_Create(IContext context, employeemanagement.proxies.Employee _employee)
-	{
-		Map<java.lang.String, Object> params = new HashMap<>();
-		params.put("Employee", _employee == null ? null : _employee.getMendixObject());
-		Core.microflowCall("EmployeeManagement.SUB_Employee_Account_Create").withParams(params).execute(context);
-	}
-	public static employeemanagement.proxies.Employee sUB_Employee_GetByID(IContext context, employeemanagement.proxies.Employee _employee)
-	{
-		Map<java.lang.String, Object> params = new HashMap<>();
-		params.put("Employee", _employee == null ? null : _employee.getMendixObject());
-		IMendixObject result = (IMendixObject)Core.microflowCall("EmployeeManagement.SUB_Employee_GetByID").withParams(params).execute(context);
-		return result == null ? null : employeemanagement.proxies.Employee.initialize(context, result);
-	}
-	public static java.lang.Long sUB_Employee_GetTotalCount(IContext context, employeemanagement.proxies.Helper _paging)
-	{
-		Map<java.lang.String, Object> params = new HashMap<>();
-		params.put("Paging", _paging == null ? null : _paging.getMendixObject());
-		return (java.lang.Long) Core.microflowCall("EmployeeManagement.SUB_Employee_GetTotalCount").withParams(params).execute(context);
-	}
 	public static java.lang.String sUB_EmployeeSortByQuery_Create(IContext context, java.lang.String _employeeNameField, java.lang.String _employeeIDField, java.lang.String _designationField, java.lang.String _departmentField, java.lang.String _dateOfJoiningField, java.lang.String _contactInfo, employeemanagement.proxies.Helper _paging)
 	{
 		Map<java.lang.String, Object> params = new HashMap<>();
@@ -271,6 +258,12 @@ public class Microflows
 		params.put("EmailTemplate", _emailTemplate == null ? null : _emailTemplate.getMendixObject());
 		params.put("Employee", _employee == null ? null : _employee.getMendixObject());
 		Core.microflowCall("EmployeeManagement.SUB_SendEmail").withParams(params).execute(context);
+	}
+	public static java.lang.Long sUB_Table_GetTotalCount(IContext context, employeemanagement.proxies.Helper _paging)
+	{
+		Map<java.lang.String, Object> params = new HashMap<>();
+		params.put("Paging", _paging == null ? null : _paging.getMendixObject());
+		return (java.lang.Long) Core.microflowCall("EmployeeManagement.SUB_Table_GetTotalCount").withParams(params).execute(context);
 	}
 	public static boolean val_Employee(IContext context, employeemanagement.proxies.Employee _employee)
 	{

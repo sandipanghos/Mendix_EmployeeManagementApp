@@ -34,6 +34,7 @@ public class Helper extends system.proxies.Paging
 		DepartmentID("DepartmentID"),
 		DepartmentName("DepartmentName"),
 		DepartmentIDFieldApplied("DepartmentIDFieldApplied"),
+		DepartmentFIeldApplied("DepartmentFIeldApplied"),
 		PageNumber("PageNumber"),
 		IsSortable("IsSortable"),
 		SortAttribute("SortAttribute"),
@@ -740,6 +741,42 @@ public class Helper extends system.proxies.Paging
 	public final void setDepartmentIDFieldApplied(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Boolean departmentidfieldapplied)
 	{
 		getMendixObject().setValue(context, MemberNames.DepartmentIDFieldApplied.toString(), departmentidfieldapplied);
+	}
+
+	/**
+	 * @return value of DepartmentFIeldApplied
+	 */
+	public final java.lang.Boolean getDepartmentFIeldApplied()
+	{
+		return getDepartmentFIeldApplied(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of DepartmentFIeldApplied
+	 */
+	public final java.lang.Boolean getDepartmentFIeldApplied(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.Boolean) getMendixObject().getValue(context, MemberNames.DepartmentFIeldApplied.toString());
+	}
+
+	/**
+	 * Set value of DepartmentFIeldApplied
+	 * @param departmentfieldapplied
+	 */
+	public final void setDepartmentFIeldApplied(java.lang.Boolean departmentfieldapplied)
+	{
+		setDepartmentFIeldApplied(getContext(), departmentfieldapplied);
+	}
+
+	/**
+	 * Set value of DepartmentFIeldApplied
+	 * @param context
+	 * @param departmentfieldapplied
+	 */
+	public final void setDepartmentFIeldApplied(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Boolean departmentfieldapplied)
+	{
+		getMendixObject().setValue(context, MemberNames.DepartmentFIeldApplied.toString(), departmentfieldapplied);
 	}
 
 	@java.lang.Override

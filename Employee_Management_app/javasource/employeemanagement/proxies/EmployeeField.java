@@ -12,7 +12,8 @@ public enum EmployeeField
 	Designation(new java.lang.String[][] { new java.lang.String[] { "en_US", "Designation" } }),
 	ContactInfo(new java.lang.String[][] { new java.lang.String[] { "en_US", "ContactInfo" } }),
 	DateOfJoining(new java.lang.String[][] { new java.lang.String[] { "en_US", "DateOfJoining" } }),
-	DepartmentID(new java.lang.String[][] { new java.lang.String[] { "en_US", "DepartmentID" } });
+	DepartmentID(new java.lang.String[][] { new java.lang.String[] { "en_US", "DepartmentID" } }),
+	Name(new java.lang.String[][] { new java.lang.String[] { "en_US", "Name" } });
 
 	private final java.util.Map<java.lang.String, java.lang.String> captions;
 
